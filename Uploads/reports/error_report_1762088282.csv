@@ -1,0 +1,4 @@
+"PO Number",Supplier,"Reference Number","Packing List","Item Code",Qty,Locator,"Error Log"
+INBOUND-TES,INBOUND-TES,INBOUND-TES,INBOUND-TES,MEJA001,10,C-3,"Item Code MEJA001 tidak ditemukan atau tidak sesuai project Inventory Telco pada baris 2"
+INBOUND-TES,INBOUND-TES,INBOUND-TES,INBOUND-TES,KURSI001,10,C-2,"Item Code KURSI001 tidak ditemukan atau tidak sesuai project Inventory Telco pada baris 3"
+INBOUND-TES,INBOUND-TES,INBOUND-TES,INBOUND-TES,ANTENNA001,10,D-2,"Item Code ANTENNA001 tidak ditemukan atau tidak sesuai project Inventory Telco pada baris 4"

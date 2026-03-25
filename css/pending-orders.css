@@ -1,0 +1,168 @@
+/**
+ * Pending Orders Notification Styles
+ */
+
+/* Badge Notification */
+.badge-notification {
+    border-radius: 50% !important;
+    min-width: 20px !important;
+    height: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.55rem !important;
+    padding: 0 !important;
+    /* box-shadow: 0 2px 8px rgba(220, 53, 69, 0.6) !important; */
+    animation: pulse-badge 2s infinite;
+    z-index: 1050 !important;
+    border: 1px solid #e0dada !important;
+    line-height: 1 !important;
+    font-weight: 600 !important;
+    /* background-color: #dc3545 !important; */
+    color: #DC143C !important;
+    pointer-events: none !important;
+}
+
+/* Positioning badge pada icon */
+.dropdown-notifications {
+    position: relative !important;
+}
+
+#navbarDropdownMessages {
+    position: relative !important;
+}
+
+#pendingOrderBadge {
+    position: absolute !important;
+    top: -2px !important;
+    right: 4px !important;
+    transform: none !important;
+    margin: 0 !important;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Modal Styling */
+#pendingOrdersModal .modal-xl {
+    max-width: 1200px;
+}
+
+#pendingOrdersModal .modal-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#pendingOrdersModal .modal-body {
+    padding: 1.5rem;
+}
+
+/* Table Styling */
+#pendingOrdersDataTable {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+#pendingOrdersDataTable th {
+    font-weight: 600;
+    white-space: nowrap;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    padding: 0.75rem;
+}
+
+#pendingOrdersDataTable td {
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+#pendingOrdersDataTable tbody tr {
+    transition: all 0.2s ease;
+}
+
+#pendingOrdersDataTable tbody tr:hover {
+    background-color: #f1f3f5;
+    transform: translateX(2px);
+}
+
+/* Badge dalam tabel */
+#pendingOrdersDataTable .badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+    font-weight: 500;
+}
+
+/* Loading State */
+#pendingOrdersLoading {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pendingOrdersLoading .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Empty State */
+#pendingOrdersEmpty {
+    min-height: 200px;
+}
+
+#pendingOrdersEmpty i {
+    opacity: 0.3;
+}
+
+/* Error State */
+#pendingOrdersError {
+    margin-bottom: 0;
+}
+
+#pendingOrdersError i {
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    #pendingOrdersModal .modal-xl {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    #pendingOrdersDataTable {
+        font-size: 0.8rem;
+    }
+    
+    #pendingOrdersDataTable th,
+    #pendingOrdersDataTable td {
+        padding: 0.5rem;
+    }
+    
+    #pendingOrdersModal .modal-body {
+        padding: 1rem;
+    }
+}
+
+/* Animation for modal */
+.animated--fade-in-up {
+    animation: fadeInUp 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

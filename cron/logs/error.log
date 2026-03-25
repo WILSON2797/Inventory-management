@@ -1,0 +1,4 @@
+[28-Aug-2025 22:50:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "PHPMailer\PHPMailer\PHPMailer" not found in /home/u272899607/domains/fislogapps.com/public_html/inventory/cron/daily_stock_email.php:355
+Stack trace:
+#0 {main}
+  thrown in /home/u272899607/domains/fislogapps.com/public_html/inventory/cron/daily_stock_email.php on line 355

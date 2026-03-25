@@ -1,0 +1,15 @@
+2025-03-08 15:31:27 - Tidak ada file yang diunggah. - File: unknown
+2025-03-08 15:31:54 - Tidak ada file yang diunggah. - File: unknown
+2025-03-08 15:34:31 - Tidak ada file yang diunggah. - File: unknown
+2025-03-08 15:34:48 - Tidak ada file yang diunggah. - File: unknown
+2025-03-08 15:52:51 - Tidak dapat memenuhi permintaan untuk item 474800A di baris 2. Masih kurang: 20 - File: template_outbound(5).csv
+2025-03-10 10:17:43 - Tidak dapat memenuhi permintaan untuk item CS80033.26 di baris 2. Masih kurang: 230 - File: outbound_tes.csv
+2025-03-10 11:12:02 - Format header CSV tidak sesuai! - File: outbound_tes.csv
+2025-03-10 11:16:55 - Format header CSV tidak sesuai! - File: template_outbound (3).csv
+2025-03-10 11:17:11 - Format header CSV tidak sesuai! - File: template_outbound (3).csv
+2025-03-12 11:09:41 - Stok tidak cukup untuk item 474416A di warehouse WH01 di baris 2. Masih kurang: 1 - File: template_outbound.csv
+2025-03-12 14:13:39 - Stok tidak cukup untuk item CS80033.26 di warehouse WH02 di baris 2. Masih kurang: 10 - File: template_outbound.csv
+2025-03-12 15:06:22 - Stok tidak cukup untuk item CS80033.26 di warehouse WH02 di baris 2. Masih kurang: 110 - File: template_outbound.csv
+2025-03-12 16:08:13 - Stok tidak cukup untuk item CS80033.26 di warehouse WH02 di baris 2. Masih kurang: 70 - File: template_outbound.csv
+2025-03-12 16:13:29 - Stok tidak cukup untuk item CS80033.26 di warehouse WH02 di baris 2. Masih kurang: 70 - File: template_outbound.csv
+2025-03-14 07:52:59 - Bulk upload gagal: Data tidak valid - File: template_outbound (1).csv

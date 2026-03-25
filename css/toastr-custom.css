@@ -1,0 +1,408 @@
+
+#toast-container {
+    z-index: 9999 !important;
+}
+
+/* Base styling untuk semua toast */
+#toast-container > div {
+    opacity: 1 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 12px !important;
+    padding: 16px 20px !important;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    font-size: 14px !important;
+    border: none !important;
+    width: 360px !important;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: visible;
+}
+
+/* Toast Title */
+#toast-container > div .toast-title {
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    margin-bottom: 4px !important;
+    letter-spacing: 0.3px;
+}
+
+/* Toast Message */
+#toast-container > div .toast-message {
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    opacity: 0.95;
+}
+
+/* ============================================
+   SUCCESS TOAST - Dark with Green Accent
+   ============================================ */
+#toast-container > .toast-success {
+    background: #fff !important;
+    color: #1f2937 !important;
+    border-left: 4px solid #10b981 !important;
+}
+
+#toast-container > .toast-success::before {
+    content: "✓";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: #10b981;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+#toast-container > .toast-success .toast-message {
+    margin-left: 35px;
+}
+
+#toast-container > .toast-success .toast-title {
+    margin-left: 35px;
+}
+
+/* ============================================
+   INFO TOAST - White with Blue Border
+   ============================================ */
+#toast-container > .toast-info {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border-left: 4px solid #3b82f6 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+#toast-container > .toast-info::before {
+    content: "i";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-style: normal;
+}
+
+#toast-container > .toast-info .toast-message {
+    margin-left: 35px;
+    color: #4b5563;
+}
+
+#toast-container > .toast-info .toast-title {
+    margin-left: 35px;
+    color: #1f2937;
+}
+
+/* ============================================
+   WARNING TOAST - White with Orange Border
+   ============================================ */
+#toast-container > .toast-warning {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border-left: 4px solid #f59e0b !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+}
+
+#toast-container > .toast-warning::before {
+    content: "!";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: #f59e0b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+#toast-container > .toast-warning .toast-message {
+    margin-left: 35px;
+    color: #4b5563;
+}
+
+#toast-container > .toast-warning .toast-title {
+    margin-left: 35px;
+    color: #1f2937;
+}
+
+/* ============================================
+   ERROR TOAST - Red Background
+   ============================================ */
+#toast-container > .toast-error {
+    background: #ef4444 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+#toast-container > .toast-error::before {
+    content: "✕";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+#toast-container > .toast-error .toast-message {
+    margin-left: 35px;
+}
+
+#toast-container > .toast-error .toast-title {
+    margin-left: 35px;
+}
+
+/* ============================================
+   CLOSE BUTTON STYLING
+   ============================================ */
+#toast-container > div .toast-close-button {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: inherit !important;
+    opacity: 0.6 !important;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    text-shadow: none !important;
+    transition: all 0.2s ease !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toast-container > div .toast-close-button:hover {
+    opacity: 1 !important;
+    transform: rotate(90deg);
+}
+
+/* Close button untuk toast putih */
+#toast-container > .toast-info .toast-close-button,
+#toast-container > .toast-warning .toast-close-button {
+    color: #6b7280 !important;
+}
+
+/* ============================================
+   PROGRESS BAR STYLING
+   ============================================ */
+#toast-container > div .toast-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px !important;
+    opacity: 1 !important;
+    border-radius: 0 0 12px 12px !important;
+}
+
+/* Progress bar untuk success */
+#toast-container > .toast-success .toast-progress {
+    background: #10b981 !important;
+}
+
+/* Progress bar untuk info */
+#toast-container > .toast-info .toast-progress {
+    background: #3b82f6 !important;
+}
+
+/* Progress bar untuk warning */
+#toast-container > .toast-warning .toast-progress {
+    background: #f59e0b !important;
+}
+
+/* Progress bar untuk error */
+#toast-container > .toast-error .toast-progress {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ============================================
+   ANIMATION
+   ============================================ */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Toast entrance animation */
+#toast-container > div {
+    animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Hover effect */
+#toast-container > div:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+/* ============================================
+   ICON ANIMATION
+   ============================================ */
+@keyframes iconPulse {
+    0%, 100% {
+        transform: translateY(-50%) scale(1);
+    }
+    50% {
+        transform: translateY(-50%) scale(1.1);
+    }
+}
+
+#toast-container > div::before {
+    animation: iconPulse 0.6s ease-out;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    #toast-container > div {
+        width: calc(100vw - 40px) !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+    }
+    
+    #toast-container.toast-top-right {
+        right: 20px;
+        left: 20px;
+    }
+    
+    #toast-container.toast-bottom-right {
+        right: 20px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #toast-container > div {
+        font-size: 13px !important;
+        padding: 14px 16px !important;
+    }
+    
+    #toast-container > div .toast-title {
+        font-size: 14px !important;
+    }
+    
+    #toast-container > div::before {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    
+    #toast-container > div .toast-message,
+    #toast-container > div .toast-title {
+        margin-left: 30px;
+    }
+}
+
+/* ============================================
+   DARK MODE SUPPORT (Optional)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+    #toast-container > .toast-info,
+    #toast-container > .toast-warning {
+        background: #1f2937 !important;
+        color: #ffffff !important;
+    }
+    
+    #toast-container > .toast-info .toast-message,
+    #toast-container > .toast-warning .toast-message,
+    #toast-container > .toast-info .toast-title,
+    #toast-container > .toast-warning .toast-title {
+        color: #e5e7eb !important;
+    }
+    
+    #toast-container > .toast-info .toast-close-button,
+    #toast-container > .toast-warning .toast-close-button {
+        color: #9ca3af !important;
+    }
+}
+
+/* ============================================
+   CUSTOM POSITIONS
+   ============================================ */
+#toast-container.toast-top-center > div,
+#toast-container.toast-bottom-center > div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   LOADING TOAST (Special Style)
+   ============================================ */
+#toast-container > .toast-loading {
+    background: #1f2937 !important;
+    color: #ffffff !important;
+    border-left: 4px solid #6366f1 !important;
+}
+
+#toast-container > .toast-loading::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(99, 102, 241, 0.3);
+    border-top-color: #6366f1;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+#toast-container > .toast-loading .toast-message,
+#toast-container > .toast-loading .toast-title {
+    margin-left: 35px;
+}
