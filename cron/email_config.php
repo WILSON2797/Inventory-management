@@ -5,15 +5,15 @@ return [
     'smtp' => [
         'host' => 'srv184.niagahoster.com',
         'port' => 465,
-        'username' => 'no-reply@fanindonesialogistics.com',
-        'password' => 'Fislog@2025', 
+        'username' => 'system@example.com',
+        'password' => '1234', 
         'secure' => 'ssl', 
         'timeout' => 30,
     ],
     
     // Sender Information
     'sender' => [
-        'email' => 'no-reply@fanindonesialogistics.com',
+        'email' => 'system@example.com',
         'name' => 'FIS - System Notification',
     ],
     
@@ -27,7 +27,7 @@ return [
         ],
         'bcc' => [
             // Fallback email jika database tidak bisa diakses
-            'wilsongurning@fanindonesialogistics.com' => 'Wilson Gurning',
+            'system@example.com' => 'Wilson Gurning',
         ],
     ],
     
@@ -69,7 +69,7 @@ return [
         'send_success_notification' => false,
         'send_error_notification' => true,
         'error_recipients' => [
-            'wilsongurning@fanindonesialogistics.com' => 'System Admin',
+            'system@example.com' => 'System Admin',
             
         ],
     ],
