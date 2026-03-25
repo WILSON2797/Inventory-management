@@ -5,15 +5,15 @@ return [
     'smtp' => [
         'host' => 'srv184.niagahoster.com',
         'port' => 465,
-        'username' => 'no-reply@fanindonesialogistics.com',
-        'password' => 'Fislog@2025', 
+        'username' => 'system@example.com',
+        'password' => 'example', 
         'secure' => 'ssl', 
         'timeout' => 30,
     ],
     
     // Sender Information
     'sender' => [
-        'email' => 'no-reply@fanindonesialogistics.com',
+        'email' => 'system@example.com',
         'name' => 'FIS - System Notification',
     ],
     
